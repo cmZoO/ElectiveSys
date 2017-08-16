@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebContent/json/products.json=UTF-8
+encoding//WebContent/themes/insdep/insdep_theme_default.css=UTF-8
+encoding//src/com/server/AdminServer.java=GBK
+encoding//src/com/util/RegexUtil.java=UTF-8
+encoding//src/gt/StartCaptchaServlet.java=UTF-8
+encoding//src/gt/VerifyLoginServlet.java=UTF-8
+encoding//src/gtsub/StartSubmitCaptchaServlet.java=UTF-8
+encoding//src/gtsub/SubmitVerifyLoginServlet.java=UTF-8
+encoding/<project>=UTF-8

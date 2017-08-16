@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="edge" />
+<link rel="shortcut icon" href="images/logo2.jpg" />
+
+<title>选课系统登陆</title>
+<!--
+    JQuery EasyUI 1.5.x of Insdep Theme 1.0.0
+    演示地址：https://www.insdep.com/example/
+    下载地址：https://www.insdep.com
+    问答地址：https://bbs.insdep.com
+
+    项目地址：http://git.oschina.net/weavors/JQuery-EasyUI-1.5.x-Of-Insdep-Theme
+
+    QQ交流群：184075694 （优先发布更新主题及内测包）
+-->
+<!--
+    注意样式表优先级
+    主题样式必须在easyui组件样式后。
+-->
+
+<link href="themes/insdep/easyui.css" rel="stylesheet" type="text/css">
+
+
+<!--
+    themes/insdep/easyui_animation.css
+    Insdep对easyui的额外增加的动画效果样式，根据需求引入或不引入，此样式不会对easyui产生影响
+-->
+<link href="themes/insdep/easyui_animation.css" rel="stylesheet"
+	type="text/css">
+
+<!--
+    themes/insdep/easyui_plus.css
+    Insdep对easyui的额外增强样式,内涵所有 insdep_xxx.css 的所有组件样式
+    根据需求可单独引入insdep_xxx.css或不引入，此样式不会对easyui产生影响
+-->
+<link href="themes/insdep/easyui_plus.css" rel="stylesheet"
+	type="text/css">
+
+<!--
+    themes/insdep/insdep_theme_default.css
+    Insdep官方默认主题样式,更新需要自行引入，此样式不会对easyui产生影响
+-->
+<link href="themes/insdep/insdep_theme_default.css" rel="stylesheet"
+	type="text/css">
+
+<!--
+    themes/insdep/icon.css
+    美化过的easyui官方icons样式，根据需要自行引入
+-->
+<link href="themes/insdep/icon.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="themes/insdep/jquery.insdep-extend.min.js"></script>
+<!-- geettest验证所需js -->
+
+ <script src="js/gt.js"></script>
+
+<!-- md5 js -->
+<script type="text/javascript" src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+
+<!-- 禁用gt后的登陆脚本 -->
+
+<!--  <script>
+	$(document).ready(function() {
+		$("#submit").click(function() {
+			$("#password").textbox('setValue',$.md5($("#password").val()));//赋值
+			$("#form").submit();
+		});
+	});
+</script> -->
+
+ <!-- geettest启用脚本 -->
+
+ <script src="./js/gtOn.js"></script> 
+
+ 
+<!-- 页面提示脚本 -->
+<script src="js/loginJs.js"></script>
+
+</head>
+
+<body class="theme-login-layout">
+	<div class="theme-login-header"></div>
+
+	<div id="theme-login-form">
+		<form id="form" class="theme-login-form" method="post"
+			action="gt/ajax-validate">
+			<dl>
+				<dt>
+					<img src="images/logo2.jpg">
+				</dt>
+
+				<dd>
+					<select panelHeight="125" id="theme-login-select" class="theme-login-select"
+						style="width: 100%;" name="identity">
+						<option value="0">请选择用户类型</option>
+						<option value="1">学生</option>
+						<option value="2">教师</option>
+						<option value="3">游客</option>
+					</select>
+				</dd>
+				<dd>
+					<input id="username" name="username" class="theme-login-text"
+						style="width: 100%;" />
+				</dd>
+				<dd>
+					<input id="password" name="password" class="theme-login-text"
+						style="width: 100%;" />
+				</dd>
+				<dd style="padding-top: 10px">
+					<div>
+						<div id="captcha">
+							<p id="wait" class="show">正在加载验证码......</p>
+						</div>
+					</div>
+					<br>
+					<p id="notice" class="hide" style="color: red">请先完成验证</p>
+				</dd>
+				<dd>
+					<a class="submit" id="submit">登陆</a> 
+					<a class="easyui-linkbutton button" href="index.html">忘记密码</a>
+				</dd>
+			</dl>
+		</form>
+	</div>
+
+	<div class="theme-login-footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+[
+{"class_time":"1","timename":"星期一"},
+{"class_time":"2","timename":"星期二"},
+{"class_time":"3","timename":"星期三"},
+{"class_time":"4","timename":"星期四"},
+{"class_time":"5","timename":"星期五"},
+{"class_time":"6","timename":"星期六上"},
+{"class_time":"7","timename":"星期六下"},
+{"class_time":"8","timename":"星期六晚"},
+{"class_time":"9","timename":"星期天上"},
+{"class_time":"10","timename":"星期天下"},
+{"class_time":"11","timename":"星期天晚"}
+]
